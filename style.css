@@ -47,13 +47,15 @@ body {
 }
 
 .page-layout {
+    width: 100%;
     max-width: 1200px;
     margin: 50px auto;
-    padding: 0 40px;
+    padding: 0 24px;
     display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 80px;
-}
+    grid-template-columns: minmax(70px, 140px) minmax(0, 1fr);
+    gap: clamp(30px, 6vw, 80px);
+    box-sizing: border-box;
+  }
 
 .sidebar {
     position: sticky;
@@ -130,6 +132,7 @@ body {
     height: 120px;
     object-fit: cover;
     border-radius: 12px;
+    flex-shrink: 0;
 
 }
 
