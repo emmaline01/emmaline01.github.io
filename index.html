@@ -26,172 +26,190 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
+<header class="site-header">
+  <div class="site-name">
+    <h1>Emmaline Mai</h1>
+  </div>
+
+  <nav class="top-links">
+    <a href="https://drive.google.com/file/d/1NPySCmxP7H0FuGvXtc8gYZl179lMgfQe/view?usp=sharing"
+      target="_blank">Resume</a>
+
+    <a href="https://github.com/emmaline01/" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/emmaline01/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:emmaline.mai@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </nav>
+</header>
+
 <body>
+  <div class="page-layout">
 
-  <div class="jumbotron jumbotron-fluid bg-coverImage" style="color:#e5eef3">
-    <div class="container-fluid">
-      <div class="vert-center">
-        <h1 class="display-1 font-weight-normal" style="font-size:10vw;"> Emmaline Mai</h1>
-        <div>
-          <a href="#about" class="fas fa-envelope-square fa-3x icons"> </a>
-          <a href="https://www.linkedin.com/in/emmaline01/" class="fab fa-linkedin fa-3x icons" target="_blank"> </a>
-          <a href="https://github.com/emmaline01/" class="fab fa-github-square fa-3x icons" target="_blank"> </a>
-          <a href="https://drive.google.com/file/d/1NPySCmxP7H0FuGvXtc8gYZl179lMgfQe/view?usp=sharing" target="_blank">
-            <button type="button" class="btn resume-button"
-              style="padding-bottom:10px; vertical-align: 13px;"><b>resume</b></button>
-          </a>
-        </div>
-      </div>
-      <p class="bottom">
-        <a href="#about" class="icons fas fa-arrow-circle-down fa-3x"> </a>
+    <aside class="sidebar">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <a name="about"></a>
+      <p>
+        I'm a Carnegie Mellon University computer science student interested in software development and robotics.
+        I have prior experience as a Software Engineering Intern at Meta
+        building a full-stack internal tool and an Automation Controls Engineering Intern at Tesla
+        programming PLCs and HMIs to help bring a pilot production line to the start of production.
+        I also enjoy learning card tricks, designing 3D-printable models, and making digital animations. Check out my
+        hobby page <a href="hobbies.html">here</a>!
+        <br><br>
+        Feel free to contact me at <a href="mailto:emmaline.mai@gmail.com" target="_blank">emmaline.mai@gmail.com</a>
+        or connect with me on Linkedin!
+        <br><br>
       </p>
-    </div>
-  </div>
 
-  <a name="about"></a>
-  <div class="container-fluid" style="background-color:#e5eef3;">
-    <div class="row" style="padding: 50px 0 40px 0">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
-        <h2 style="text-align: center; font-size:x-large;">
-          Hi, I'm Emmaline.
-        </h2>
-        <p style="padding:20px 0 0 0; text-align: center; font-size:medium;">
-          I'm a Carnegie Mellon University computer science student interested in software development and robotics.
-          I have prior experience as a Software Engineering Intern at Meta
-          building a full-stack internal tool and an Automation Controls Engineering Intern at Tesla
-          programming PLCs and HMIs to help bring a pilot production line to the start of production.
-          I also enjoy learning card tricks, designing 3D-printable models, and making digital animations. Check out my
-          hobby page <a href="hobbies.html" style="text-decoration:underline">here</a>!
-          <br><br>
-          Feel free to contact me at <a href="mailto:emmaline.mai@gmail.com" target="_blank">emmaline.mai@gmail.com</a>
-          or connect with me on Linkedin!
-          <br><br>
-        </p>
-        <i></i>
-      </div>
-    </div>
-  </div>
+      <a name="projects"></a>
+      <h2 class="section-title"><a href="#projects">Projects</a></h2>
 
-  <a name="projects"></a>
-  <div class="container-fluid" style="background-color:#e5eef3">
-    <div class="row" style="padding: 15px 0 0 0">
-      <div class="col-sm-4">
-        <button class="modal-button shadow pt-3 pb-2 rounded" id="biorobotics-button">
-          <p>
-            <img src="mainImages/biorobotics.jpg" alt="Biorobotics project" class="img-thumbnail">
-            <br><br>
-            <span style="font-size: large"><b>Snake Robot Locomotion: Directional Compliance</b></span>
+      <div class="projects-list">
+        <div class="projects-list">
 
-            <br>
-            CMU Robotics Institute | 2020-21
-            <br><br>
-            research on novel methods of autonomous snake robot locomotion through obstacles
-            <br><br>
-            Skills: MATLAB
-          </p>
-        </button>
-      </div>
-      <div class="col-sm-4">
-        <button class="modal-button shadow pt-3 pb-2 rounded" id="cheerpeer-button">
-          <p>
-            <img src="mainImages/cheerpeer.png" alt="Peerdea project" class="img-thumbnail">
-            <br><br>
-            <span style="font-size: large"><b>Peerdea</b></span>
+          <button class="project-item" id="cheerpeer-button">
+            <img src="mainImages/cheerpeer.png" alt="Cheerpeer project" class="project-image">
 
-            <br>
-            CMU Human-Computer Interaction Institute | 2022-23
-            <br><br>
-            research on supporting entrepreneurs
-            through a novel mobile platform for exchanging creative feedback and reflection
-            <br><br>
-            Skills: JavaScript (React Native, Expo), storyboarding, low and high-fidelity prototyping (Figma)
-          </p>
-        </button>
-      </div>
-      <div class="col-sm-4">
-        <button class="modal-button shadow pt-3 pb-2 rounded" id="cardistry-button">
-          <p>
-            <img src="mainImages/cardistry.jpg" alt="Cardistry dashboard project" class="img-thumbnail">
-            <br><br>
-            <span style="font-size: large"><b>Cardistry Dashboard</b></span>
-            <br>
-            2021
-            <br><br>
-            web app created to track the card tricks I've learned, recommend new
-            tricks to learn, and suggest performance sequences of tricks
-            <br><br>
-            Skills: JavaScript (React), Python (Flask), SQL, Microsoft Azure
-          </p>
-        </button>
-      </div>
-    </div>
-    <div class="row" style="padding: 20px 0 50px 0">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-4">
-        <button class="modal-button shadow pt-3 pb-2 rounded" id="dailyDino-button">
-          <p>
-            <img src="mainImages/dailyDino.jpg" alt="Daily Dino project" class="img-thumbnail">
-            <br><br>
-            <span style="font-size: large"><b>Daily Dino</b></span>
-            <br>
-            2022-present
-            <br><br>
-            Chrome Extension that replaces the new tab page with a new dino each day
-            <br><br>
-            Skills: JavaScript, HTML/CSS
-          </p>
-        </button>
-      </div>
-      <div class="col-sm-4">
-        <button class="modal-button shadow pt-3 pb-2 rounded" id="elm-button">
-          <p>
-            <img src="mainImages/elm.jpg" alt="ELM project" class="img-thumbnail">
-            <br><br>
-            <span style="font-size: large"><b>ELM (Educate, Learn, Motivate)</b></span>
-            <br>
-            Hackathon | 2020
-            <br><br>
-            mobile app and website that connects tutors and tutees over a video call to discuss any subject
-            <br><br>
-            Skills: Java (Android Studio)
-          </p>
-        </button>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
+            <div class="project-info">
+              <h3>Cheerpeer</h3>
+
+              <p>
+                CMU Human-Computer Interaction Institute | 2022-23
+              </p>
+
+              <p>
+                research on supporting entrepreneurs through a novel mobile platform for exchanging creative feedback
+                and reflection
+              </p>
+
+              <p>
+                Skills: JavaScript (React Native, Expo), storyboarding, low and high-fidelity prototyping (Figma)
+              </p>
+            </div>
+          </button>
+
+          <button class="project-item" id="biorobotics-button">
+            <img src="mainImages/biorobotics.jpg" alt="Biorobotics project" class="project-image">
+
+            <div class="project-info">
+              <h3>Snake Robot Locomotion: Directional Compliance</h3>
+              <p>
+                CMU Robotics Institute | 2020-21
+              </p>
+
+              <p>
+                research on novel methods of autonomous snake robot locomotion through obstacles
+              </p>
+
+              <p>
+                Skills: MATLAB
+              </p>
+            </div>
+          </button>
+
+
+          <button class="project-item" id="cardistry-button">
+            <img src="mainImages/cardistry.jpg" alt="Cardistry dashboard project" class="project-image">
+
+            <div class="project-info">
+              <h3>Cardistry Dashboard</h3>
+
+              <p>
+                2021
+              </p>
+
+              <p>
+                web app created to track the card tricks I've learned, recommend new tricks to learn, and suggest
+                performance sequences of tricks
+              </p>
+
+              <p>
+                Skills: JavaScript (React), Python (Flask), SQL, Microsoft Azure
+              </p>
+            </div>
+          </button>
+
+
+          <button class="project-item" id="dailyDino-button">
+            <img src="mainImages/dailyDino.jpg" alt="Daily Dino project" class="project-image">
+
+            <div class="project-info">
+              <h3>Daily Dino</h3>
+
+              <p>
+                2022-23
+              </p>
+
+              <p>
+                Chrome Extension that replaces the new tab page with a new dino each day
+              </p>
+
+              <p>
+                Skills: JavaScript, HTML/CSS
+              </p>
+            </div>
+          </button>
+
+
+          <button class="project-item" id="elm-button">
+            <img src="mainImages/elm.jpg" alt="ELM project" class="project-image">
+
+            <div class="project-info">
+              <h3>ELM (Educate, Learn, Motivate)</h3>
+
+              <p>
+                Hackathon | 2020
+              </p>
+
+              <p>
+                mobile app and website that connects tutors and tutees over a video call to discuss any subject
+              </p>
+
+              <p>
+                Skills: Java (Android Studio)
+              </p>
+            </div>
+          </button>
+
+        </div>
+
+    </main>
+
   </div>
 
   <!-- FOOTER FOR CONTACT INFO -->
   <a name="footer"></a>
-  <div class="container-fluid">
-    <div class="row" style="padding: 20px 0 0 0; background-color:#e5eef3; color:#7cc9f3">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-3">
-        <p style="text-align: left; font-size:medium;">
-          <br><br>
-          Emmaline Mai
-        </p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-label"> <span>Contact me</span> </div>
+      <div class="footer-details">
+        <div> Email: <a href="mailto:emmaline.mai@gmail.com"> emmaline.mai@gmail.com </a> </div>
+        <div> LinkedIn: <a href="https://www.linkedin.com/in/emmaline01/" target="_blank"> linkedin.com/in/emmaline01
+          </a> </div>
       </div>
-      <div class="col-sm-7">
-        <p style="text-align: left; font-size:medium;">
-          <br><br>
-          Email: emmaline.mai@gmail.com
-          <br>
-          Linkedin: https://www.linkedin.com/in/emmaline01/
-          <br><br>
-        </p>
-      </div>
-      <div class="col-sm-1"></div>
     </div>
-  </div>
+  </footer>
 
 
   <!-- MODALS-->
   <div id="cheerpeer-modal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h2>Peerdea</h2>
+        <h2>Cheerpeer</h2>
         <span class="cheerpeer-close close">&times;</span>
       </div>
       <div class="modal-body">
@@ -199,8 +217,7 @@
         <div id="carouselCheerpeer" class="carousel slide card-img-top" data-interval="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="mainImages/peerdeaChatGPT.jpg"
-                style="height:375px; object-fit: cover;">
+              <img class="d-block w-100" src="mainImages/peerdeaChatGPT.jpg" style="height:375px; object-fit: cover;">
               <div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.6); height:60px;">
                 <p>ChatGPT 3's responses to potential questions from entrepreneurs</p>
               </div>
@@ -209,7 +226,7 @@
               <img class="d-block w-100" src="mainImages/cheerpeer-hi-fidelity.jpg"
                 style="height:375px; object-fit: cover;">
               <div class="carousel-caption d-md-block" style="background-color:rgba(0, 0, 0, 0.6); height:60px;">
-                <p>High fidelity prototype made in Figma</p>
+                <p>High fidelity prototype (Figma)</p>
               </div>
             </div>
             <div class="carousel-item">
@@ -243,26 +260,27 @@
           My Role:
           <br>
           As a research assistant I made various contributions to our mobile app,
-          <a href="https://peerdea.app/" target="_blank">Peerdea</a> and worked with the local Pittsburgh community to co-design it. 
+          <a href="https://peerdea.app/" target="_blank">Cheerpeer</a> and worked with the local Pittsburgh community to
+          co-design it.
           My contributions included
-          <ul>
-            <li>Enhancements (e.g., accessibility implementation, UI improvements)</li>
-            <li>Maintenance and repair (e.g. bug fixes, code maintenance, unit testing)</li>
-            <li>Oversaw deployments (e.g., builds for iOS and Android) </li>
-            <li>Peerdea interview + workshop facilitation @ Prototype PGH </li>
-            <li>Low and high fidelity prototypes for new features
+        <ul>
+          <li>Enhancements (e.g., accessibility implementation, UI improvements)</li>
+          <li>Maintenance and repair (e.g. bug fixes, code maintenance, unit testing)</li>
+          <li>Oversaw deployments (e.g., builds for iOS and Android) </li>
+          <li>Cheerpeer interview + workshop facilitation @ Prototype PGH </li>
+          <li>Low and high fidelity prototypes for new features
             to help entrepreneurs progress towards personal/business goals through regular self-reflection</li>
-            <li>Exploring large language models as a solution for quick feedback</li>
-          </ul>
-          <br>
-          Project Context:
-          <br>
-          Peerdea is a mobile app for IOS and Android that allows entrepreneurs
-          to share designs and feedback on their creative work with each other. Peerdea builds
-          on this by also supporting entrepreneurs in reaching their individual goals through regular
-          reflection. In collaboration with the feminist makerspace
-          <a href="https://prototypepgh.com/" target="_blank">Prototype PGH</a>,
-          over 3 years, 31 entrepreneurs have used Peerdea through an incubator.
+          <li>Exploring large language models as a solution for quick feedback</li>
+        </ul>
+        <br>
+        Project Context:
+        <br>
+        Cheerpeer is a mobile app for IOS and Android that allows entrepreneurs
+        to share designs and feedback on their creative work with each other. Cheerpeer builds
+        on this by also supporting entrepreneurs in reaching their individual goals through regular
+        reflection. In collaboration with the feminist makerspace
+        <a href="https://prototypepgh.com/" target="_blank">Prototype PGH</a>,
+        over 3 years, 31 entrepreneurs have used Cheerpeer through an incubator.
         </p>
         <a href="https://www.figma.com/proto/WUqSpfz4hY2hnsItp9jNWi/Cheerpeer?node-id=31%3A45&scaling=scale-down&page-id=0%3A1&starting-point-node-id=31%3A45&show-proto-sidebar=1"
           target="_blank">See the Figma prototype here!</a>

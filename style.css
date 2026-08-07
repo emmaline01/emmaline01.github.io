@@ -1,214 +1,288 @@
-html {
-    scroll-behavior: smooth;
+body {
+    background-color: #f4f1eb;
+    color: #241f19;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    a {
+        color: #456990;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    
+    a:hover {
+        color: #345676;
+        text-decoration: none;
+    }
 }
 
-/* a {
-    color: inherit;
-    text-decoration: none;
-} */
-
-.icons {
-    color: #e5eef3;
-    text-decoration: none;
-}
-
-.icons:hover {
-    text-decoration: none;
-    /* color: #456990; */
-    color: #7cc9f3;
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-}
-
-.resume-button {
-    background-color: #e5eef3;
-    text-decoration: none;
-}
-
-.resume-button:hover {
-    text-decoration: none;
-    background-color: #7cc9f3;
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-}
-
-/* for project images */
-.img-thumbnail {
-    background-color: #e5eef3;
-    border-color: #241f19;
-    height: 250px;
-    object-fit: cover;
-}
-
-/* for resume button */
-.btn-outline-light {
-    color: #e5eef3;
-    border: 4px solid #e5eef3;
-    vertical-align: text-bottom;
-    height: 41px;
-}
-
-.btn-outline-light:hover {
-    background-color: rgba(0, 0, 0, 0);
-    border: 4px solid #456990;
-    color: #456990;
-}
-
-.jumbotron {
-    height: 100vh;
-    padding-top: 0;
-    margin-bottom: 0px;
-}
-
-.vert-center {
-    min-height: 75%;
-    min-height: 75vh;
-    min-width: 95%;
-    min-width: 95vw;
-
+.site-header {
+    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 24px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.site-name h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.top-links {
+    display: flex;
+    gap: 20px;
+    font-size: 0.95rem;
+}
+
+.top-links a {
+    color: #444;
+    text-decoration: none;
+}
+
+.top-links a:hover {
+    color: #000;
+}
+
+.page-layout {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 80px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 120px;
+    align-self: start;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sidebar a {
+    color: #666;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #000;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.section-title a:hover {
+    text-decoration: underline;
+}
+
+/* PROJECTS */
+
+.projects-list {
+    display: flex;
     flex-direction: column;
 }
 
-/*
-.topbar {
-    float: right;
-    margin-top: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-}
-
-.topbar:hover {
-    text-decoration: none;
-    color: #99F5FF;
-} */
-
-.bottom {
+.project-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.bg-coverImage {
-    background-image: url('mainImages/background.jpg');
-}
-
-.container-fluid {
-    overflow: hidden;
-}
-
-/* MODAL STYLES*/
-
-/* The Modal (background) */
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 50px;
-    /* Location of the box */
-    padding-bottom: 50px;
-    left: 0;
-    top: 0;
+    gap: 30px;
     width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-}
-
-/* Modal Content  referenced https://www.w3schools.com/howto/howto_css_modals.asp */
-.modal-content {
-    position: relative;
-    background-color: #fafdfe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 75%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-@keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-/* The Close Button */
-.close {
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: rgb(88, 88, 88);
-    text-decoration: none;
+    padding: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ddd6cc;
+    text-align: left;
     cursor: pointer;
+    color: inherit;
+    transition: background-color .2s ease;
 }
 
-.modal-header {
-    padding: 10px 16px;
+.project-item:hover {
+    background-color: rgba(255, 255, 255, 0.45);
 }
 
-.modal-body {
-    padding: 10px 16px;
-    height: 100%;
+.project-item,
+.project-item:focus,
+.project-item:active,
+.project-item:focus-visible {
+    outline: none;
+    box-shadow: none;
 }
+
+.project-image {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+.project-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+.project-info p {
+    margin: 8px 0;
+    color: #5f5a52;
+
+}
+
+/* MODAL */
 
 .modal-button {
-    background-color: #fafdfe;
-    outline: none;
-    border: none;
-    height: 100%;
-    display: inline-flex;
-    align-items: start;
-    text-align: center;
-    color: #241f19;
+    background-color: #faf9f6;
+    border: 1px solid #ddd6cc;
+    border-radius: 14px;
+    transition: .2s;
+    padding: 20px;
 }
 
 .modal-button:hover {
-    transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
 }
 
-.modal-button:focus {
-    outline: none;
+/* Modal overlay */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(36, 31, 25, 0.35);
+    padding: 40px;
+}
+
+/* Modal card */
+.modal-content {
+    position: relative;
+    background-color: #f7f4ee;
+    margin: auto;
+    max-width: 850px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .15);
+    animation: modalFade .25s ease;
+
+}
+
+/* subtle entrance */
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Header */
+.modal-header {
+    padding: 24px 30px;
+    border-bottom: 1px solid #ddd6cc;
+
+}
+
+.modal-header h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+/* Body */
+.modal-body {
+    padding: 30px;
+    color: #241f19;
+    line-height: 1.7;
+
+    img {
+        border-radius: 12px;
+    }
+
+    iframe {
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Close button */
+.close {
+    color: #7a746b;
+    font-size: 28px;
+    font-weight: 400;
+
+}
+
+.close:hover {
+    color: #241f19;
+
+}
+
+/* FOOTER */
+
+.site-footer {
+    margin-left: 240px;
+    /* match the side navigation width */
+    padding: 55px 55px 65px;
+    background: #f4f2ee;
+}
+
+.footer-content {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+}
+
+.footer-label {
+    color: #30343b;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.footer-details {
+    color: #737a82;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .site-footer {
+        margin-left: 0;
+        padding: 40px 25px 50px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
